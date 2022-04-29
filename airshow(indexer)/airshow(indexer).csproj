@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>airshow_indexer_</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Airbus-A380.jpg" />
+    <None Remove="basket.jpg" />
+    <None Remove="Boeing-737-max-10.jpg" />
+    <None Remove="Boeing-777-9.jpg" />
+    <None Remove="Boeing747.jpg" />
+    <None Remove="pngtree-shopping-basket-icon-png-image_1871519.jpg" />
+    <None Remove="Superjet-100.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Airbus-A380.jpg" />
+    <Resource Include="basket.jpg" />
+    <Resource Include="Boeing-737-max-10.jpg" />
+    <Resource Include="Boeing-777-9.jpg" />
+    <Resource Include="Boeing747.jpg" />
+    <Resource Include="Superjet-100.jpg" />
+  </ItemGroup>
+
+</Project>

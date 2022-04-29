@@ -1,0 +1,21 @@
+﻿<Window x:Class="airshow_indexer_.Basket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:airshow_indexer_"
+        mc:Ignorable="d"
+        Title="Basket" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="50 50 400 50" >
+            <DataGrid x:Name="AirplaneDataGrid" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Price in Dollars" Binding="{Binding price}" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <TextBlock x:Name="TextBlockBasket" HorizontalAlignment="Left" Margin="459,55,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Button" Margin="618,309,5,5" Click="BtnBack_Click" Height="100" Width="150"/>
+    </Grid>
+</Window>
